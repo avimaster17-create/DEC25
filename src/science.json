@@ -1,0 +1,37 @@
+{
+    "scientists": [
+      {
+        "name": "Isaac Newton",
+        "invention": "Laws of Motion and Universal Gravitation"
+      },
+      {
+        "name": "Albert Einstein",
+        "invention": "Theory of Relativity"
+      },
+      {
+        "name": "Nikola Tesla",
+        "invention": "Alternating Current (AC) Power System"
+      },
+      {
+        "name": "Thomas Edison",
+        "invention": "Practical Electric Light Bulb"
+      },
+      {
+        "name": "Marie Curie",
+        "invention": "Research on Radioactivity"
+      },
+      {
+        "name": "Alexander Graham Bell",
+        "invention": "Telephone"
+      },
+      {
+        "name": "Charles Darwin",
+        "invention": "Theory of Evolution by Natural Selection"
+      },
+      {
+        "name": "Galileo Galilei",
+        "invention": "Astronomical Telescope Improvements"
+      }
+    ]
+  }
+  
