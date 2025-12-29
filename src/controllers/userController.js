@@ -48,4 +48,27 @@ const signin = async (req, res) => {
     }
 
 }
-module.exports = { signup, signin };
+
+const prospectfoliocreation = async (req,res) => {
+    let { pan, invname, dob, mobileno, emailId } = req.body;
+    try {
+        const regex = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+        pan = pan?.toUpperCase();
+        if (!regex.test(pan)) {
+            return res.status(400).json({ message: "Invalid Pan Number" });
+        }
+        const dateRegex = /^\d{2}-(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)-\d{4}$/;
+        if (!dateRegex.test(dob)) {
+            return res.status(400).json({ message: "Date format is not correct" })
+        }
+        if (mobileno.length != 10) {
+            return res.status(400).json({ message: "mobile number should be of 10 length" })
+        }
+        res.json({message:"Validation done"})
+    }
+    catch(error) {
+        console.log(error);
+    }
+}
+
+module.exports = { signup, signin, prospectfoliocreation };
